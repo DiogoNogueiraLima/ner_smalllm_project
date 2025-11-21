@@ -1,3 +1,19 @@
 .venv
-notebooks/models
-notebooks/results_lenerbr
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+.vscode/
+
+# Model outputs and checkpoints
+notebooks/models/
+results_*/
+
+# Local data/cache
+data/
+cache/
+
+# Build artifacts
+build/
+dist/

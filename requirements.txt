@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+evaluate
+seqeval
+numpy
+matplotlib
+accelerate
+jupyter

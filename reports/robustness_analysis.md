@@ -47,6 +47,12 @@ Robustness in Named Entity Recognition (NER) denotes the model’s ability to ma
 - **Expected failure modes**: Over-reliance on memorized lexical anchors; possible mislabeling if context weak.
 - **Implementation**: Deterministic lookup map applied token by token.
 
+### Note on Synonym Substitution Methodology
+We opted for a manually curated synonym map to ensure **full control, reproducibility, and meaning preservation**. Due to the legal nature of the task, where terminology is highly specific, conservative, and semantically rigid, automatic alternatives such as WordNet, spaCy, or LLM-based generation often produce domain-inaccurate or non-deterministic substitutions. Such outputs would compromise the validity of the robustness analysis. Manual curation guarantees **minimal, stable, and legally coherent** perturbations that align with real variation observed in legal texts.
+
+
+Manual selection allows us to apply **minimal, stable, and semantically coherent** perturbations, making it possible to isolate the model’s sensitivity to lexical variation in legal texts.
+
 ## Results
 | Scenario | F1 Score |
 | --- | --- |

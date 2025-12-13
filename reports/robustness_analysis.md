@@ -56,7 +56,7 @@ Manual selection allows us to apply **minimal, stable, and semantically coherent
 ## Results
 | Scenario | F1 Score |
 | --- | --- |
-| Baseline | 0.866373 |
+| Baseline | 0.86 |
 | Accent removal | 0.823529 |
 | Char noise (p=0.1) | 0.652632 |
 | Word insertion | 0.102339 |

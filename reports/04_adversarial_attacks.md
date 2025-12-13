@@ -79,6 +79,11 @@ Baseline F1 (seqeval): **0.86**
 | synonym_oracle | 0.830 | 0.885 | 0.856 | -0.006 | 0.006 | 0.115 | 0.100 | 0.053 | 0.039 |
 | synonym_pred | 0.830 | 0.885 | 0.856 | -0.006 | 0.006 | 0.115 | 0.100 | 0.045 | 0.045 |
 
+> note: The synonym attack affects only a small subset of entity tokens, since most
+legal entities (e.g., PERSON, LOCATION, TIME) do not admit safe synonym
+substitution. As a result, many validation sentences remain unchanged, and the
+observed F1 drop should be interpreted as a lower bound on semantic robustness.
+
 ### Insertion — true structural view (no projection)
 
 | attack | precision | recall | f1 | entity_retention_rate | conf_drop_gold_true_insertion |
